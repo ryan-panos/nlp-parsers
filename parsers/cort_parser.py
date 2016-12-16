@@ -1,4 +1,4 @@
-
+import collections
 from xml_nlp_parser import XMLNlPParser
 # from xml.etree.ElementTree import *
 import xml.etree.ElementTree as ET
@@ -31,12 +31,30 @@ class CortParser(XMLNlPParser):
         print " 2 self.root is " + str(self.root)
 
 
+        all_entities = collections.OrderedDict()
 
         # for mention in self.root.iter('mention'):
         for mention in self.root.findall('mention'):
             cnt += 1
             if cnt % 1 == 0:
-                print str(cnt) + ": " + str(mention)
+                # print str(cnt) + ": " + str(mention.attrib)
+                if mention.attrib.get('entity', None) is not None:
+                    # if mention.attrib.get('entity', None) is not None:
+                    entity = mention.attrib.get('entity')
+                    if all_entities.get(entity, None) is not None:
+                        # if hasattr(all_entities, entity):
+                        all_entities[entity].append(mention)  ##Todo: consider a more useful structure?
+                    else:
+                        all_entities[entity] = [mention]
+                else:
+                    #print " NO entity? " + str(mention.attrib.get('entity'))
+                    pass
+
+
+        for key, mention_ls in all_entities.iteritems():
+            print " ___________ \n Entity: " + str(key)
+            for mention in mention_ls:
+                print "mention.text: " + str(mention.text)
 
 
         pass
