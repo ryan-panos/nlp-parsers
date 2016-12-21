@@ -73,7 +73,7 @@ def test_cort1():
 
     print " GONNA READ "
 
-    f = open('/Users/ryanpanos/Documents/code/nlp-parsers/data/wells1_plain.xml', 'r')  # MAKE THIS RELATIVE!
+    f = open('/Users/ryanpanos/Documents/code/nlp-parsers/data/winograd_cort_plain.xml', 'r')  # MAKE THIS RELATIVE!
     # print f.read()
     # cp.load_data(f.read(), needs_wrapper=True)
     cp.save_data(f.read(), needs_wrapper=True)

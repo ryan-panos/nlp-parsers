@@ -1,0 +1,1522 @@
+
+ ___________ 
+ Entity: 1
+mention.text: The city councilmen
+mention.text: they
+ ___________ 
+ Entity: 6
+mention.text: Joan
+mention.text: Joan
+ ___________ 
+ Entity: 7
+mention.text: Susan
+mention.text: Susan
+mention.text: Susan
+mention.text: Susan
+mention.text: Susan
+mention.text: Susan
+mention.text: Susan
+mention.text: Susan
+mention.text: Susan
+mention.text: Susan
+ ___________ 
+ Entity: 10
+mention.text: Paul
+mention.text: Paul
+mention.text: his
+mention.text: Joe 's
+mention.text: Joe 's
+mention.text: Joe
+mention.text: He
+mention.text: Joe
+mention.text: He
+mention.text: Paul
+mention.text: Paul
+mention.text: Joey
+mention.text: Joey
+mention.text: Joe
+mention.text: he
+mention.text: Joe
+mention.text: he
+ ___________ 
+ Entity: 11
+mention.text: George
+mention.text: George
+mention.text: George
+mention.text: George
+mention.text: George
+mention.text: he
+mention.text: he
+mention.text: George
+mention.text: he
+mention.text: he
+mention.text: George
+mention.text: he
+mention.text: he
+ ___________ 
+ Entity: 14
+mention.text: Frank
+mention.text: Frank
+mention.text: Frank
+mention.text: Frank
+ ___________ 
+ Entity: 16
+mention.text: Bill
+mention.text: Bill
+mention.text: Bill
+mention.text: himself
+mention.text: Bill
+mention.text: Bill
+mention.text: he
+mention.text: Bill
+mention.text: he
+mention.text: he
+mention.text: he
+mention.text: Bill
+mention.text: Bill
+mention.text: Bill
+mention.text: Bill
+mention.text: Bill
+mention.text: Bill
+mention.text: Timmy
+mention.text: Timmy
+mention.text: Bill
+mention.text: Bill
+ ___________ 
+ Entity: 19
+mention.text: John
+mention.text: John
+mention.text: John
+mention.text: John
+mention.text: John
+mention.text: John
+mention.text: John
+mention.text: John
+mention.text: John
+mention.text: John
+mention.text: John
+mention.text: John
+mention.text: John
+mention.text: John
+ ___________ 
+ Entity: 20
+mention.text: Billy
+mention.text: Billy
+mention.text: Billy
+mention.text: Billy
+ ___________ 
+ Entity: 23
+mention.text: Tom
+mention.text: Tom
+mention.text: Tom
+mention.text: Tom
+mention.text: The customer
+mention.text: He
+mention.text: The customer
+mention.text: He
+mention.text: He
+mention.text: He
+mention.text: he
+mention.text: He
+mention.text: he
+mention.text: He
+mention.text: he
+mention.text: He
+mention.text: he
+mention.text: He
+mention.text: himself
+mention.text: He
+mention.text: himself
+mention.text: He
+mention.text: Tom
+mention.text: he
+mention.text: Tom
+mention.text: he
+mention.text: Tom
+mention.text: Tom
+mention.text: he
+mention.text: he
+mention.text: the boy
+mention.text: the boy
+mention.text: the sleeping boy in 
+mention.text: the sleeping boy in 
+ ___________ 
+ Entity: 24
+mention.text: Ray
+mention.text: Ray
+ ___________ 
+ Entity: 27
+mention.text: Sue
+mention.text: Sue
+mention.text: her
+mention.text: Lucy
+mention.text: Lucy
+mention.text: Ann 's
+mention.text: Ann 's
+mention.text: Ann 's
+mention.text: Ann 's
+mention.text: Ann
+mention.text: Ann
+mention.text: she
+mention.text: Anne
+mention.text: She
+mention.text: Anne
+mention.text: She
+mention.text: Alice
+mention.text: she
+mention.text: Alice
+mention.text: she
+mention.text: Mary
+mention.text: She
+mention.text: Mary
+mention.text: She
+mention.text: she
+mention.text: Sara
+mention.text: she
+mention.text: She
+mention.text: she
+mention.text: Sara
+mention.text: she
+mention.text: She
+mention.text: she
+mention.text: Jane
+mention.text: She
+mention.text: Jane
+mention.text: She
+mention.text: Jane
+mention.text: She
+mention.text: her
+mention.text: Jane
+mention.text: She
+mention.text: her
+mention.text: Mary
+mention.text: her
+mention.text: daughter Anne into 
+mention.text: she
+mention.text: Mary
+mention.text: her
+mention.text: daughter Anne into 
+mention.text: she
+mention.text: The actress
+mention.text: she
+mention.text: The actress
+mention.text: she
+mention.text: she
+mention.text: She
+mention.text: her
+mention.text: She
+mention.text: her
+mention.text: Jane
+mention.text: she
+mention.text: Jane
+mention.text: she
+mention.text: Beth
+mention.text: she
+mention.text: Beth
+mention.text: she
+mention.text: the woman
+mention.text: the girl
+mention.text: the woman
+mention.text: the girl
+mention.text: Lily
+mention.text: Donna
+mention.text: Lily
+mention.text: Donna
+mention.text: The woman
+mention.text: the girl
+mention.text: The woman
+mention.text: the girl against 
+mention.text: her
+mention.text: her
+mention.text: Kate
+mention.text: she
+mention.text: Kate
+mention.text: she
+mention.text: Jane
+mention.text: she
+mention.text: Jane
+mention.text: she
+mention.text: Emma
+mention.text: Janie
+mention.text: she
+mention.text: she
+mention.text: Emma
+mention.text: Janie
+mention.text: she
+mention.text: Madonna
+mention.text: she
+mention.text: Madonna
+mention.text: she
+mention.text: Madonna
+mention.text: she
+mention.text: Madonna
+mention.text: she
+mention.text: Carol
+mention.text: Rebecca
+mention.text: she
+mention.text: Carol
+mention.text: Rebecca
+mention.text: she
+ ___________ 
+ Entity: 28
+mention.text: Sally
+mention.text: Sally
+mention.text: Sally , who had cut 
+mention.text: Sally , who had cut 
+ ___________ 
+ Entity: 31
+mention.text: Sam 's
+mention.text: Sam 's
+mention.text: Sam
+mention.text: Sam
+mention.text: Sam
+mention.text: he
+mention.text: Sam
+mention.text: he
+mention.text: Sam
+mention.text: he
+mention.text: Sam
+mention.text: he
+mention.text: Sam
+mention.text: Sam
+mention.text: Sam
+mention.text: he
+mention.text: Sam
+mention.text: he
+mention.text: The man
+mention.text: The man
+ ___________ 
+ Entity: 32
+mention.text: Tina 's
+mention.text: Tina 's
+ ___________ 
+ Entity: 33
+mention.text: one
+mention.text: one
+mention.text: one of 
+mention.text: one of 
+mention.text: a new one
+mention.text: a new one
+mention.text: one of 
+mention.text: one of 
+ ___________ 
+ Entity: 37
+mention.text: Anna
+mention.text: Anna
+ ___________ 
+ Entity: 46
+mention.text: Jim
+mention.text: Jim
+mention.text: Jim
+mention.text: Jim
+ ___________ 
+ Entity: 47
+mention.text: Kevin
+mention.text: Kevin
+ ___________ 
+ Entity: 50
+mention.text: Pete
+mention.text: Pete
+mention.text: Pete
+mention.text: Pete
+ ___________ 
+ Entity: 51
+mention.text: Martin
+mention.text: Martin
+ ___________ 
+ Entity: 58
+mention.text: Sid
+mention.text: Sid
+ ___________ 
+ Entity: 59
+mention.text: Mark
+mention.text: Mark
+mention.text: Mark 's
+mention.text: Mark
+mention.text: Mark
+ ___________ 
+ Entity: 67
+mention.text: 30 years
+mention.text: 30 years
+ ___________ 
+ Entity: 71
+mention.text: It
+mention.text: It
+ ___________ 
+ Entity: 72
+mention.text: the right of 
+mention.text: the right of 
+ ___________ 
+ Entity: 77
+mention.text: an oak tree
+mention.text: the tree
+mention.text: the tree
+mention.text: the tree
+mention.text: it
+mention.text: the tree
+mention.text: it
+mention.text: the bank
+mention.text: the bank
+mention.text: that tree
+mention.text: it
+mention.text: that tree
+mention.text: it
+ ___________ 
+ Entity: 81
+mention.text: There
+mention.text: There
+mention.text: There
+mention.text: There
+mention.text: There
+mention.text: There
+mention.text: there
+mention.text: there
+ ___________ 
+ Entity: 84
+mention.text: You
+mention.text: You
+ ___________ 
+ Entity: 85
+mention.text: the garden
+mention.text: the garden
+ ___________ 
+ Entity: 83
+mention.text: it
+mention.text: it
+ ___________ 
+ Entity: 93
+mention.text: The drain
+mention.text: It
+mention.text: The drain
+mention.text: It
+mention.text: It
+mention.text: It
+ ___________ 
+ Entity: 94
+mention.text: hair
+mention.text: hair
+ ___________ 
+ Entity: 100
+mention.text: None
+mention.text: it
+mention.text: it
+mention.text: None
+mention.text: it
+mention.text: it
+ ___________ 
+ Entity: 101
+mention.text: 4:00
+mention.text: 4:00
+ ___________ 
+ Entity: 99
+mention.text: I
+mention.text: I
+mention.text: I
+mention.text: I
+mention.text: I
+mention.text: I
+mention.text: I
+mention.text: I
+mention.text: I
+mention.text: I
+mention.text: Mary what time 
+mention.text: Mary what time 
+mention.text: I
+mention.text: I
+mention.text: I
+mention.text: I
+mention.text: I
+mention.text: I
+mention.text: Charlie
+mention.text: Charlie
+mention.text: I
+mention.text: I
+mention.text: I
+mention.text: I
+mention.text: I
+mention.text: I
+mention.text: I
+mention.text: I
+mention.text: I
+mention.text: I
+mention.text: I
+mention.text: I
+mention.text: I
+mention.text: I
+mention.text: I
+mention.text: I
+mention.text: I
+mention.text: I
+mention.text: I
+mention.text: I
+mention.text: I
+mention.text: I
+mention.text: I
+mention.text: I
+mention.text: I
+mention.text: I
+mention.text: Steve
+mention.text: He
+mention.text: him
+mention.text: Steve
+mention.text: He
+mention.text: him
+mention.text: me
+mention.text: me
+mention.text: Dan
+mention.text: his ` 
+mention.text: Dan
+mention.text: his ` 
+mention.text: Dan
+mention.text: Dan
+mention.text: I
+mention.text: I
+mention.text: I
+mention.text: I
+ ___________ 
+ Entity: 103
+mention.text: the train
+mention.text: the train
+ ___________ 
+ Entity: 104
+mention.text: 4:30
+mention.text: 4:30
+ ___________ 
+ Entity: 120
+mention.text: a pilllar between 
+mention.text: it
+mention.text: the station
+mention.text: it
+mention.text: the station
+mention.text: it
+mention.text: the police station
+ ___________ 
+ Entity: 127
+mention.text: a pillar between 
+mention.text: it
+ ___________ 
+ Entity: 133
+mention.text: They
+mention.text: They
+ ___________ 
+ Entity: 134
+mention.text: an annoucement
+mention.text: an annoucement
+ ___________ 
+ Entity: 135
+mention.text: a subway
+mention.text: a subway
+ ___________ 
+ Entity: 145
+mention.text: the middle of 
+mention.text: the middle of 
+ ___________ 
+ Entity: 147
+mention.text: the rain
+mention.text: it
+mention.text: the rain
+mention.text: it
+ ___________ 
+ Entity: 149
+mention.text: 10
+mention.text: 10
+ ___________ 
+ Entity: 156
+mention.text: an old rag
+mention.text: an old rag
+ ___________ 
+ Entity: 157
+mention.text: the knife
+mention.text: it
+mention.text: the knife
+mention.text: it
+ ___________ 
+ Entity: 176
+mention.text: the water bottle
+mention.text: it
+mention.text: the water bottle
+mention.text: it
+mention.text: it
+ ___________ 
+ Entity: 177
+mention.text: the backpack
+mention.text: the backpack
+mention.text: None
+mention.text: None
+ ___________ 
+ Entity: 184
+mention.text: the pot
+mention.text: the pot
+ ___________ 
+ Entity: 185
+mention.text: the shelf
+mention.text: the shelf
+mention.text: it
+ ___________ 
+ Entity: 193
+mention.text: None
+mention.text: it
+mention.text: None
+mention.text: it
+ ___________ 
+ Entity: 194
+mention.text: this building
+mention.text: this building
+ ___________ 
+ Entity: 201
+mention.text: Bob
+mention.text: He
+mention.text: Bob
+mention.text: He
+mention.text: Bob
+mention.text: He
+mention.text: Bob
+mention.text: He
+mention.text: Bob
+mention.text: he
+mention.text: Bob
+mention.text: Bob
+mention.text: Bob
+mention.text: Bob
+mention.text: Bob
+mention.text: Bob
+mention.text: Bob
+ ___________ 
+ Entity: 203
+mention.text: None
+mention.text: None
+mention.text: None
+mention.text: None
+mention.text: None
+ ___________ 
+ Entity: 212
+mention.text: now
+mention.text: now
+mention.text: Now
+mention.text: Now
+ ___________ 
+ Entity: 214
+mention.text: it
+mention.text: it
+ ___________ 
+ Entity: 225
+mention.text: Adam
+mention.text: Adam
+mention.text: Adam
+mention.text: Adam
+mention.text: he
+mention.text: Adam
+mention.text: him
+mention.text: he
+mention.text: Adam
+mention.text: him
+mention.text: he
+mention.text: he
+mention.text: he
+mention.text: Adam
+mention.text: Adam
+ ___________ 
+ Entity: 228
+mention.text: a sudden run of 
+mention.text: a sudden run of 
+ ___________ 
+ Entity: 240
+mention.text: work
+mention.text: work
+ ___________ 
+ Entity: 244
+mention.text: work on 
+mention.text: work on 
+ ___________ 
+ Entity: 245
+mention.text: this time
+mention.text: this time
+mention.text: the time 
+mention.text: the time 
+ ___________ 
+ Entity: 257
+mention.text: the con artist
+mention.text: the con artist
+ ___________ 
+ Entity: 260
+mention.text: a lot of 
+mention.text: a lot of 
+ ___________ 
+ Entity: 267
+mention.text: It
+mention.text: it
+mention.text: it
+mention.text: It
+mention.text: it
+mention.text: it
+ ___________ 
+ Entity: 268
+mention.text: a 
+mention.text: a 
+ ___________ 
+ Entity: 270
+mention.text: the dog
+mention.text: the dog
+mention.text: The dog
+mention.text: It
+mention.text: The dog
+mention.text: It
+mention.text: the storm
+mention.text: the storm
+ ___________ 
+ Entity: 271
+mention.text: the middle of 
+mention.text: the middle of 
+ ___________ 
+ Entity: 275
+mention.text: a spot
+mention.text: a spot
+ ___________ 
+ Entity: 289
+mention.text: The cat
+mention.text: it
+mention.text: The cat
+mention.text: it
+ ___________ 
+ Entity: 290
+mention.text: the mouse hole waiting for 
+mention.text: the mouse hole waiting for 
+ ___________ 
+ Entity: 300
+mention.text: last month
+mention.text: last month
+ ___________ 
+ Entity: 311
+mention.text: None
+mention.text: None
+ ___________ 
+ Entity: 312
+mention.text: the party
+mention.text: the party
+ ___________ 
+ Entity: 313
+mention.text: us
+mention.text: us
+mention.text: our
+mention.text: we
+mention.text: we
+mention.text: We
+mention.text: We
+mention.text: we
+mention.text: we
+mention.text: We
+mention.text: We
+ ___________ 
+ Entity: 322
+mention.text: Jim yelling at 
+mention.text: he
+mention.text: he
+mention.text: Jim yelling at 
+mention.text: he
+mention.text: he
+mention.text: Thomson
+mention.text: he
+mention.text: Thomson
+mention.text: he
+mention.text: Jackson
+mention.text: he
+mention.text: Jackson
+mention.text: he
+mention.text: Grace
+mention.text: Grace
+mention.text: Dr. Adams
+mention.text: Dr. Adams
+mention.text: He
+mention.text: He
+ ___________ 
+ Entity: 337
+mention.text: The fish
+mention.text: It
+mention.text: The fish
+mention.text: It
+ ___________ 
+ Entity: 338
+mention.text: the worm
+mention.text: the worm
+ ___________ 
+ Entity: 344
+mention.text: the lock
+mention.text: it
+mention.text: the lock
+mention.text: it
+ ___________ 
+ Entity: 345
+mention.text: the key
+mention.text: the keyhole
+mention.text: the key
+mention.text: the keyhole
+mention.text: None
+ ___________ 
+ Entity: 348
+mention.text: chewing gum
+mention.text: chewing gum
+ ___________ 
+ Entity: 360
+mention.text: the cat , which ran up 
+mention.text: the cat , which ran up 
+ ___________ 
+ Entity: 371
+mention.text: the roof of 
+mention.text: the roof of 
+ ___________ 
+ Entity: 169
+mention.text: the library when 
+mention.text: the library when 
+mention.text: the library
+mention.text: the library
+ ___________ 
+ Entity: 410
+mention.text: the park
+mention.text: the park
+ ___________ 
+ Entity: 422
+mention.text: the sidewalk
+mention.text: the sidewalk
+ ___________ 
+ Entity: 424
+mention.text: Carl coming to help
+mention.text: Carl coming to help
+ ___________ 
+ Entity: 432
+mention.text: None
+mention.text: they
+mention.text: None
+mention.text: they
+ ___________ 
+ Entity: 434
+mention.text: love
+mention.text: love
+ ___________ 
+ Entity: 436
+mention.text: None
+mention.text: None
+mention.text: None
+mention.text: They
+mention.text: None
+mention.text: They
+ ___________ 
+ Entity: 437
+mention.text: it
+mention.text: it
+ ___________ 
+ Entity: 451
+mention.text: None
+mention.text: None
+ ___________ 
+ Entity: 455
+mention.text: None
+mention.text: None
+ ___________ 
+ Entity: 80
+mention.text: None
+mention.text: it
+mention.text: None
+mention.text: it
+ ___________ 
+ Entity: 469
+mention.text: a few miles
+mention.text: a few miles
+ ___________ 
+ Entity: 472
+mention.text: Thursday
+mention.text: Thursday
+ ___________ 
+ Entity: 481
+mention.text: Many people
+mention.text: them
+mention.text: They
+ ___________ 
+ Entity: 483
+mention.text: None
+mention.text: None
+ ___________ 
+ Entity: 487
+mention.text: Many people
+mention.text: them
+mention.text: They
+ ___________ 
+ Entity: 496
+mention.text: None
+mention.text: it since 
+mention.text: None
+mention.text: it
+ ___________ 
+ Entity: 503
+mention.text: a child
+ ___________ 
+ Entity: 516
+mention.text: the piano
+mention.text: it
+mention.text: the piano
+mention.text: it
+mention.text: it
+mention.text: it
+mention.text: the book
+mention.text: it
+mention.text: it
+mention.text: the book
+mention.text: it
+mention.text: it
+mention.text: it
+mention.text: it
+mention.text: the heavy book
+ ___________ 
+ Entity: 526
+mention.text: the newspaper
+mention.text: the newspaper
+ ___________ 
+ Entity: 547
+mention.text: work
+mention.text: work
+ ___________ 
+ Entity: 560
+mention.text: This morning
+mention.text: This morning
+mention.text: morning
+mention.text: morning
+ ___________ 
+ Entity: 562
+mention.text: a sand castle
+mention.text: a sand castle
+ ___________ 
+ Entity: 563
+mention.text: the beach
+mention.text: the beach
+mention.text: the ocean beach
+mention.text: the ocean beach
+ ___________ 
+ Entity: 564
+mention.text: a toy flag
+mention.text: a toy flag
+ ___________ 
+ Entity: 565
+mention.text: the highest tower
+mention.text: the highest tower
+ ___________ 
+ Entity: 566
+mention.text: this afternoon
+mention.text: this afternoon
+ ___________ 
+ Entity: 576
+mention.text: the wind
+mention.text: the wind
+mention.text: the wind
+mention.text: the wind
+mention.text: the wind
+ ___________ 
+ Entity: 580
+mention.text: None
+mention.text: None
+mention.text: the door
+mention.text: it
+mention.text: the door
+mention.text: it
+mention.text: it
+mention.text: it
+mention.text: it
+mention.text: it
+mention.text: None
+mention.text: None
+ ___________ 
+ Entity: 612
+mention.text: The path to 
+mention.text: The path to 
+ ___________ 
+ Entity: 620
+mention.text: The sun
+mention.text: it
+mention.text: The sun
+mention.text: it
+mention.text: it
+mention.text: it
+ ___________ 
+ Entity: 621
+mention.text: a thick cloud
+mention.text: a thick cloud
+ ___________ 
+ Entity: 613
+mention.text: the lake
+mention.text: the lake
+ ___________ 
+ Entity: 634
+mention.text: a shark
+mention.text: a shark
+ ___________ 
+ Entity: 637
+mention.text: a safer place to swim
+mention.text: a dangerous place to swim
+mention.text: None
+ ___________ 
+ Entity: 645
+mention.text: a picture of 
+mention.text: a picture of 
+ ___________ 
+ Entity: 647
+mention.text: sheep
+mention.text: sheep
+ ___________ 
+ Entity: 648
+mention.text: they
+mention.text: they
+ ___________ 
+ Entity: 667
+mention.text: None
+mention.text: they
+mention.text: None
+mention.text: they
+ ___________ 
+ Entity: 669
+mention.text: coats
+mention.text: coats
+ ___________ 
+ Entity: 671
+mention.text: Alaska
+mention.text: Alaska
+ ___________ 
+ Entity: 680
+mention.text: None
+mention.text: None
+ ___________ 
+ Entity: 681
+mention.text: 1765
+mention.text: 1765
+ ___________ 
+ Entity: 682
+mention.text: that date
+mention.text: that date
+ ___________ 
+ Entity: 684
+mention.text: five years
+mention.text: five years
+ ___________ 
+ Entity: 693
+mention.text: Arnold
+mention.text: Arnold
+ ___________ 
+ Entity: 695
+mention.text: two centuries 
+ ___________ 
+ Entity: 704
+mention.text: that axe
+mention.text: that axe
+ ___________ 
+ Entity: 710
+mention.text: The foxes
+mention.text: The foxes
+mention.text: The foxes
+mention.text: They
+mention.text: The foxes
+mention.text: They
+mention.text: them
+mention.text: them
+ ___________ 
+ Entity: 711
+mention.text: night
+mention.text: night
+mention.text: night
+mention.text: night
+ ___________ 
+ Entity: 712
+mention.text: the chickens
+mention.text: them
+mention.text: the chickens
+mention.text: them
+mention.text: the chickens
+mention.text: the chickens
+ ___________ 
+ Entity: 666
+mention.text: Fred
+mention.text: He
+mention.text: Fred
+mention.text: He
+mention.text: Fred
+mention.text: he
+mention.text: Fred
+mention.text: he
+mention.text: Fred
+mention.text: he
+mention.text: he
+mention.text: he
+mention.text: Fred
+mention.text: he
+mention.text: he
+mention.text: he
+mention.text: Fred
+mention.text: He
+mention.text: Fred
+mention.text: He
+mention.text: Fred
+mention.text: Fred
+mention.text: he
+mention.text: Fred
+mention.text: Fred
+mention.text: he
+ ___________ 
+ Entity: 730
+mention.text: None
+mention.text: None
+ ___________ 
+ Entity: 732
+mention.text: None
+mention.text: None
+ ___________ 
+ Entity: 749
+mention.text: Terpsichore
+mention.text: Terpsichore
+ ___________ 
+ Entity: 751
+mention.text: it
+mention.text: it
+mention.text: it
+mention.text: it
+ ___________ 
+ Entity: 770
+mention.text: an hour
+mention.text: an hour
+ ___________ 
+ Entity: 779
+mention.text: the dishwasher
+mention.text: it
+mention.text: it
+mention.text: the dishwasher
+mention.text: it
+mention.text: it
+ ___________ 
+ Entity: 784
+mention.text: the show
+mention.text: the show
+ ___________ 
+ Entity: 787
+mention.text: None
+mention.text: None
+ ___________ 
+ Entity: 801
+mention.text: the only man still alive who remembers 
+mention.text: the only man still alive who remembers 
+ ___________ 
+ Entity: 813
+mention.text: the only man alive who still remembers 
+mention.text: the only man alive who still remembers 
+ ___________ 
+ Entity: 815
+mention.text: None
+mention.text: None
+mention.text: father
+mention.text: father
+mention.text: The father
+mention.text: The father
+mention.text: None
+mention.text: None
+mention.text: None
+mention.text: None
+mention.text: None
+mention.text: None
+ ___________ 
+ Entity: 832
+mention.text: July
+mention.text: July
+ ___________ 
+ Entity: 833
+mention.text: Kamchatka
+mention.text: Kamchatka
+ ___________ 
+ Entity: 835
+mention.text: Yakutsk
+mention.text: Yakutsk
+ ___________ 
+ Entity: 837
+mention.text: None
+mention.text: None
+ ___________ 
+ Entity: 840
+mention.text: they
+mention.text: they
+ ___________ 
+ Entity: 841
+mention.text: weeks
+mention.text: weeks
+ ___________ 
+ Entity: 853
+mention.text: a minnow swimming
+mention.text: It
+mention.text: It
+ ___________ 
+ Entity: 854
+mention.text: that duck
+mention.text: that duck
+ ___________ 
+ Entity: 856
+mention.text: safety
+mention.text: safety
+ ___________ 
+ Entity: 862
+mention.text: Archaeologists
+mention.text: They
+mention.text: They
+mention.text: The scientists
+mention.text: They
+mention.text: The scientists
+mention.text: They
+mention.text: The journalists
+mention.text: They
+mention.text: The journalists
+mention.text: They
+mention.text: They
+mention.text: They
+ ___________ 
+ Entity: 864
+mention.text: Laputa
+mention.text: Laputa
+ ___________ 
+ Entity: 866
+mention.text: None
+mention.text: None
+mention.text: None
+mention.text: None
+ ___________ 
+ Entity: 879
+mention.text: None
+mention.text: None
+ ___________ 
+ Entity: 896
+mention.text: the stars of 
+mention.text: the stars of 
+ ___________ 
+ Entity: 899
+mention.text: the interview
+mention.text: the interview
+ ___________ 
+ Entity: 900
+mention.text: a long time
+mention.text: a long time
+ ___________ 
+ Entity: 907
+mention.text: The police
+mention.text: The police
+ ___________ 
+ Entity: 908
+mention.text: all of 
+mention.text: all of 
+ ___________ 
+ Entity: 911
+mention.text: the drug trade
+mention.text: the drug trade
+ ___________ 
+ Entity: 912
+mention.text: the neighborhood
+mention.text: the neighborhood
+ ___________ 
+ Entity: 920
+mention.text: the cake
+mention.text: the cake
+ ___________ 
+ Entity: 921
+mention.text: the refrigerator
+mention.text: the refrigerator
+ ___________ 
+ Entity: 934
+mention.text: both 
+mention.text: both 
+ ___________ 
+ Entity: 939
+mention.text: None
+mention.text: None
+ ___________ 
+ Entity: 951
+mention.text: the sponsors of 
+mention.text: they
+mention.text: They
+mention.text: the sponsors of 
+mention.text: they
+mention.text: They
+ ___________ 
+ Entity: 953
+mention.text: the town hall
+mention.text: the town hall
+ ___________ 
+ Entity: 76
+mention.text: the room
+mention.text: the room
+ ___________ 
+ Entity: 956
+mention.text: opponents
+mention.text: opponents
+ ___________ 
+ Entity: 968
+mention.text: the oatmeal cookies
+mention.text: the chocolate chip cookies
+mention.text: the oatmeal cookies
+mention.text: the chocolate chip cookies
+ ___________ 
+ Entity: 969
+mention.text: only a few people
+mention.text: them
+mention.text: only a few people
+mention.text: them
+mention.text: them
+ ___________ 
+ Entity: 980
+mention.text: copies of 
+mention.text: copies of 
+ ___________ 
+ Entity: 983
+mention.text: all the chairs in 
+mention.text: all the chairs in 
+ ___________ 
+ Entity: 997
+mention.text: a pin
+mention.text: the pin
+mention.text: it
+mention.text: the pin
+mention.text: it
+ ___________ 
+ Entity: 998
+mention.text: a carrot
+mention.text: a carrot
+ ___________ 
+ Entity: 1011
+mention.text: a spoon
+mention.text: a spoon
+ ___________ 
+ Entity: 1013
+mention.text: a pen to stir 
+mention.text: a pen to stir 
+ ___________ 
+ Entity: 1016
+mention.text: that
+mention.text: it
+ ___________ 
+ Entity: 1015
+mention.text: coffee
+ ___________ 
+ Entity: 1026
+mention.text: that
+mention.text: it
+ ___________ 
+ Entity: 1032
+mention.text: None
+mention.text: None
+ ___________ 
+ Entity: 1042
+mention.text: The table
+mention.text: it
+mention.text: The table
+mention.text: it
+mention.text: the table
+mention.text: the table
+ ___________ 
+ Entity: 1043
+mention.text: the doorway
+mention.text: the doorway
+ ___________ 
+ Entity: 1051
+mention.text: None
+mention.text: None
+ ___________ 
+ Entity: 1068
+mention.text: care of 
+mention.text: care of 
+ ___________ 
+ Entity: 1078
+mention.text: None
+mention.text: None
+ ___________ 
+ Entity: 1086
+mention.text: None
+mention.text: None
+ ___________ 
+ Entity: 1088
+mention.text: Xenophanes
+mention.text: Xenophanes
+ ___________ 
+ Entity: 1104
+mention.text: None
+mention.text: None
+ ___________ 
+ Entity: 1107
+mention.text: an excellent woman as 
+mention.text: an excellent woman as 
+ ___________ 
+ Entity: 1125
+mention.text: the detective
+mention.text: the detective
+ ___________ 
+ Entity: 1127
+mention.text: the final report
+mention.text: the final report
+ ___________ 
+ Entity: 1128
+mention.text: the case
+mention.text: the case
+ ___________ 
+ Entity: 838
+mention.text: ten
+ ___________ 
+ Entity: 1144
+mention.text: the barman
+mention.text: the barman
+ ___________ 
+ Entity: 1152
+mention.text: the rear seat
+mention.text: the rear seat
+ ___________ 
+ Entity: 1154
+mention.text: the front
+mention.text: the front
+ ___________ 
+ Entity: 1164
+mention.text: ` Check ' to 
+mention.text: ` Check ' to 
+ ___________ 
+ Entity: 1168
+mention.text: None
+mention.text: None
+ ___________ 
+ Entity: 1175
+mention.text: Andrea in 
+mention.text: she
+mention.text: Andrea in 
+mention.text: she
+ ___________ 
+ Entity: 1165
+mention.text: Ralph
+mention.text: Ralph
+ ___________ 
+ Entity: 1196
+mention.text: the half-empty plate
+mention.text: the half-empty plate
+ ___________ 
+ Entity: 1204
+mention.text: the gameboy
+mention.text: the gameboy
+ ___________ 
+ Entity: 1207
+mention.text: None
+mention.text: None
+ ___________ 
+ Entity: 1222
+mention.text: None
+mention.text: None
+ ___________ 
+ Entity: 1230
+mention.text: Toby
+mention.text: Toby
+ ___________ 
+ Entity: 1232
+mention.text: None
+mention.text: None
+ ___________ 
+ Entity: 1245
+mention.text: Tommy
+mention.text: him
+mention.text: Tommy
+mention.text: him
+mention.text: Ollie
+mention.text: Tommy
+mention.text: Ollie
+mention.text: Tommy
+ ___________ 
+ Entity: 1247
+mention.text: None
+mention.text: None
+ ___________ 
+ Entity: 1263
+mention.text: None
+ ___________ 
+ Entity: 1280
+mention.text: None
+mention.text: it
+mention.text: it
+ ___________ 
+ Entity: 1286
+mention.text: home
+mention.text: home
+ ___________ 
+ Entity: 1308
+mention.text: future treatment
+ ___________ 
+ Entity: 1317
+mention.text: the injured bird
+mention.text: the injured bird
+ ___________ 
+ Entity: 1324
+mention.text: free tickets
+mention.text: them
+mention.text: them
+mention.text: them
+ ___________ 
+ Entity: 1325
+mention.text: the play
+mention.text: it
+mention.text: the play
+mention.text: it
+mention.text: the play
+mention.text: it
+ ___________ 
+ Entity: 1328
+mention.text: Eric
+mention.text: Eric
+mention.text: Eric
+ ___________ 
+ Entity: 1349
+mention.text: None
+mention.text: None
+ ___________ 
+ Entity: 1356
+mention.text: a picture of 
+mention.text: a picture of 
+ ___________ 
+ Entity: 1358
+mention.text: lemons in 
+mention.text: lemons in 
+ ___________ 
+ Entity: 1360
+mention.text: they
+mention.text: they
+ ___________ 
+ Entity: 1369
+mention.text: James
+mention.text: he
+mention.text: James
+mention.text: he
+mention.text: Kirilov
+mention.text: he
+mention.text: Kirilov
+mention.text: he
+ ___________ 
+ Entity: 1370
+mention.text: Robert for 
+mention.text: Robert for 
+ ___________ 
+ Entity: 1378
+mention.text: the presidency
+mention.text: the presidency
+ ___________ 
+ Entity: 1379
+mention.text: Shatov
+mention.text: Shatov
+ ___________ 
+ Entity: 1386
+mention.text: the ball
+mention.text: the ball
+ ___________ 
+ Entity: 1397
+mention.text: it
+mention.text: it
+ ___________ 
+ Entity: 1404
+mention.text: None
+mention.text: None
+mention.text: None
+mention.text: None
+ ___________ 
+ Entity: 1429
+mention.text: the watch
+mention.text: the watch
+
+Process finished with exit code 0
