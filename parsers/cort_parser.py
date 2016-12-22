@@ -11,6 +11,7 @@ class CortParser(XMLNlPParser):
         self.root = None
         super(CortParser, self).__init__(self)
 
+    ## NOT USED?
     def load_data(self, xml_str, needs_wrapper=False):
         # XMLNlPParser(self, xml_str)
         self.root = super(CortParser, self).load_data(xml_str, needs_wrapper)
