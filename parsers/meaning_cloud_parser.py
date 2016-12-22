@@ -45,6 +45,59 @@ class MeaningCloudParser(JSONNlPParser):
         # AND
         # "he"/"him" proform.isAnaphora value(19) = the antecedent.id(19)
 
+        # from https://www.meaningcloud.com/developer/lemmatization-pos-parsing/doc/2.0/response
+        # Observations
+        # token_list(s) can be a list of tokens.  A token might be a sentance, phrase or word
+        # for co-ref, we obv dont care about sentances!
+        # phase can be "the dog" and it will have a sub token_list with "dog"
+        #
+        # CONCERNs: phase can be "which" and sub token_list can be some analysis on which?!?!
+        #    So one word can be a phrase and its still not the leaf, at least in example 102
+        # docs say "word" is a type but it is not in example 102 - probably its sentance, phrase and **word types**
+        #
+        # syntactic_tree_relation_list is the key!  Every token seems to have these and they tie this token to
+        # the antecendant or proform
+        #
+        # EXAMPLE of coref
+        # in ex102:   "The dog chased the cat, which ran up a tree."  "It waited at the bottom."
+        # "Which" has id=27 and also has
+        # "syntactic_tree_relation_list": [
+        #         {
+        #             "type": "isAnaphora",
+        #             "id": "25"
+        #         }
+        #     ],
+        #   and "the cat" has id=25 and also has:
+        #
+        # "syntactic_tree_relation_list": [
+        #                                     {
+        #                                         "type": "isSubject",
+        #                                         "id": "8"
+        #                                     },
+        #                                     {
+        #                                         "type": "isDirectObject",
+        #                                         "id": "3"
+        #                                     },
+        #                                     {
+        #                                         "type": "iof_isNonRestrictiveApposition",
+        #                                         "id": "29"
+        #                                     },
+        #                                     {
+        #                                         "type": "iof_isAnaphora",
+        #                                         "id": "27"
+        #                                     },
+        #                                     {
+        #                                         "type": "iof_isAnaphora",
+        #                                         "id": "32"
+        #                                     }
+        #                                 ],
+        # #
+        #
+        #  Note 27 pertains to "which" and "32" pertains to "it" in the next sentance
+        #
+
+
+
 
 
 
