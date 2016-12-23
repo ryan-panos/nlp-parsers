@@ -230,7 +230,7 @@ class MeaningCloudParser(JSONNlPParser):
                         criteria_cnt += 1
                         print " antecedant id is in antcendant syn_ls! " + str(antecedent_id)
 
-                    if str(proform_node[u'form']) == proform:
+                    if str(proform_node[u'form']).replace('\.','').lower() == proform.lower().replace('."',''):
                         criteria_cnt += 1
                         print " And proform matches!! " + str(proform)
                     else:
