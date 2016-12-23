@@ -1,0 +1,52 @@
+{
+  u
+  'endp': u
+  '81',
+  u
+  'style': {
+    u
+    'isItalics': u
+    'no',
+    u
+    'isUnderlined': u
+    'no',
+    u
+    'isTitle': u
+    'no',
+    u
+    'isBold': u
+    'no'
+  },
+  u
+  'separation': u
+  '1',
+  u
+  'form': u
+  'of',
+  u
+  'quote_level': u
+  '1',
+  u
+  'affected_by_negation': u
+  'no',
+  u
+  'inip': u
+  '80',
+  u
+  'analysis_list': [
+    {
+      u
+      'lemma': u
+      'of',
+      u
+      'tag': u
+      'YN9',
+      u
+      'original_form': u
+      'of'
+    }
+  ],
+  u
+  'id': u
+  '15'
+}

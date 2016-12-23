@@ -2,6 +2,7 @@
 from base_parser import BaseParser
 
 import json
+# import yaml
 from pprint import pprint
 
 
@@ -9,8 +10,9 @@ from pprint import pprint
 class JSONNlPParser(BaseParser):
 
     def __init__(self, child):
-        print "#> Initing JSONNlPParser . .."
+        # print "#> Initing JSONNlPParser . .."
         ## Todo : call parent just in case?
+        pass
 
     def _finditem(self, obj, key):
         if key in obj: return obj[key]
@@ -55,15 +57,16 @@ class JSONNlPParser(BaseParser):
 
         with open(json_file_name) as data_file:
             data = json.load(data_file)
+            #data = yaml.safe_load(data_file)
             return data
 
     def load_data(self, json_str, needs_wrapper=False):
-        print " ## Gonna load " + json_str
+        # print " ## Gonna load " + json_str
         #todo need error checking?
 
         ## TODO: decode unicode here!!??!!?
 
-        data = json.loads(json_str)
+        data = json.loads(str(json_str))
         # data.close()
         return data
 
