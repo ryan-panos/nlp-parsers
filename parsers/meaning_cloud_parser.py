@@ -161,10 +161,14 @@ class MeaningCloudParser(JSONNlPParser):
                            u'syn_ls': syn_ls
                         }
 
+                        print " syn_ls len : " + str(len(syn_ls))
+
                         if u'form' in token_obj: # could there be other ways they store "the word?"
                             syn_ls_dict[u'form'] = token_obj[u'form']
                         if u'id' in token_obj:
                             syn_ls_dict[u'id'] = token_obj[u'id']
+                        if u'inip' in token_obj:
+                            syn_ls_dict[u'inip'] = token_obj[u'inip']  # initial position!
 
                         if prop in the_prop_ls_dict:
                             the_prop_ls_dict[prop].append(syn_ls_dict)
@@ -194,8 +198,87 @@ class MeaningCloudParser(JSONNlPParser):
 
 
         # print " >> the_prop_ls_dict: " + str(the_prop_ls_dict)
+    def _get_antecdenat_str(self, of_isAnaphora_ls, eid):
 
-    def has_antecedent_proform_match(self, proform, antecedent):
+        poss_ls = filter(lambda ent_node: int(ent_node[u'id']) == eid, of_isAnaphora_ls)
+        if poss_ls is None or len(poss_ls) == 0:
+            print " %% no entities fitting in " + str(of_isAnaphora_ls) + " |+| " + str(eid)
+            return None
+
+        else:
+            print "   FOUND:" + str(poss_ls[0][u'form'])
+            return poss_ls[0][u'form']
+
+            #(item for item in of_isAnaphora_ls if int(item[u'id']) == eid).next()
+
+
+    def find_swaps(self, original_input_str):
+        prop_ls = [u'iof_isAnaphora', u'isAnaphora']
+        the_prop_ls_dict = {}  # todo - rename?
+        if u'token_list' in self.root_dict:
+            the_prop_ls_dict = self._get_all_props_ls(self.root_dict[u'token_list'], prop_ls, the_prop_ls_dict)
+
+            # the_prop_ls_dict['isAnaphora'] = the_prop_ls_dict['isAnaphora'].sort(key=lambda x: (  int(x[u'inip']),
+            #                                                                             print str(x[u'inip'])))  # , reverse=True
+
+            if 'isAnaphora' not in the_prop_ls_dict or len(the_prop_ls_dict['isAnaphora']) == 0:
+                print " %% No isAnaphora for " + original_input_str
+                return
+
+            sorted_proforms = sorted(the_prop_ls_dict['isAnaphora'], key=lambda k: int(k[u'inip']))
+
+            print " The Entities: " + str(the_prop_ls_dict[u'iof_isAnaphora'])
+            print " The Proforms: " + str(sorted_proforms)
+
+            START_TAG_A = '<span eid='
+            START_TAG_B = ' class="pronoun_insert">'
+            END_TAG = '</span>'
+            converted_original_input_str = original_input_str
+            offset = 0
+            for proform_node in sorted_proforms:
+                ent_id_ls = proform_node[u'syn_ls']
+
+                if len(ent_id_ls) > 1:
+                    print " ## MORE THAN ONE ENTITY?  HOPEFULLY SAME VALUE!  TAKING TOP "
+                    ent_id_str = str(ent_id_ls[0])
+                elif len(ent_id_ls) == 1:
+                    ent_id_str = str(ent_id_ls[0])
+                else:
+                    print " >> NO ENTITIY ID FOR " + str(proform_node[u'syn_ls'])
+                    continue
+
+
+
+                curr_pos = int(proform_node[u'inip']) + offset
+                end_pos = int(proform_node[u'inip']) + offset + len(proform_node[u'form'])
+
+                entity_insert_str = self._get_antecdenat_str(the_prop_ls_dict[u'iof_isAnaphora'], int(ent_id_str))
+                if entity_insert_str is None:
+                    entity_insert_str = "[MISSING]"
+
+                new_pronoun_insert_str = START_TAG_A + ent_id_str + START_TAG_B + proform_node[u'form'] + "\\" + entity_insert_str + END_TAG
+                print " new_pronoun_insert_str: " + new_pronoun_insert_str
+
+                converted_original_input_str = converted_original_input_str[:curr_pos] + new_pronoun_insert_str + converted_original_input_str[end_pos:]
+
+                offset = offset + len(new_pronoun_insert_str) - len(proform_node[u'form'])
+
+            print " NOW: " + converted_original_input_str
+
+
+
+
+
+
+
+        else:
+            print " No token_list in root?"
+
+
+    def has_antecedent_proform_match(self, proform, antecedent, doSwapOutputs=False):
+        filename = DATA_DIR + "the_swaps.txt"
+        swap_target = open(filename, 'w')
+
         prop_ls = [u'iof_isAnaphora', u'isAnaphora']
         the_prop_ls_dict = {}  # todo - rename?
         if u'token_list' in self.root_dict:
@@ -229,6 +312,12 @@ class MeaningCloudParser(JSONNlPParser):
                     if antecedent_id in poss_proform_node[u'syn_ls']:
                         criteria_cnt += 1
                         print " antecedant id is in antcendant syn_ls! " + str(antecedent_id)
+
+                    # is this where we know? - DEPENDANT ON KNOWING antecedent here!
+                    # if criteria_cnt == 2:
+                        # try to swa here?
+
+
 
                     if str(poss_proform_node[u'form']).replace('\.','').lower() == proform.lower().replace('."',''):
                         criteria_cnt += 1
@@ -298,7 +387,43 @@ def test_winograd(print_solution=False):
     print " DONE " + source
 
 
+def do_winograd_subs(print_solution=False):
 
+    source = DATA_DIR + 'winograd.csv'
+    # source = '/Users/ryanpanos/Documents/code/nlp-parsers/data/winograd.csv'
+            # /Users/ryanpanos/Documents/code/nlp-parsers/data
+    # for line in
+    with open(source, "r") as ins:
+        # array = []
+        total_success = 0
+        tried_cnt = 0
+        for idx, line in enumerate(ins):
+            line_ls = line.split('","')
+            proform = line_ls[1]
+            antecedent = line_ls[2].replace('\"','').replace('\n','')
+            sentance = line_ls[0].replace('\"','')
+            # print " proform:" + str(proform) + "|"
+            # print " anaform:" + str(Antecedent) + "|"
+
+            if antecedent != 'Antecedent': # skip line # 1
+                ans_file = 'meaningCloud_output_json/' + str(idx+1) + '_winograd.json'
+                f = open(DATA_DIR + ans_file, 'r')
+                mcp = MeaningCloudParser() ## just once?
+                mcp.load_data(f.read())
+
+                mcp.find_swaps(sentance)
+
+                # tried_cnt += 1
+                # # mcp.test_prop_getter()
+                # if print_solution:
+                #     print "\n FROM: " + sentance
+                #     print " HOPING FOR: " + proform + " = " + antecedent
+                #
+                # if mcp.has_antecedent_proform_match(proform, antecedent):
+                #     total_success += 1
+
+        print "\n\n >> Found " + str(total_success) + " out of " + str(tried_cnt)
+    print " DONE " + source
 
 
 # with open('data.json') as data_file:
@@ -320,9 +445,12 @@ json1 = '{"a": { "b":1 }}'
 # mcp2.test_prop_getter()
 
 
-f = open(DATA_DIR + 'meaningCloud_output_json/128_winograd.json', 'r')
-mcp3 = MeaningCloudParser()
-mcp3.load_data(f.read())
-mcp3.test_prop_getter()
+# f = open(DATA_DIR + 'meaningCloud_output_json/166_winograd.json', 'r')
+# mcp3 = MeaningCloudParser()
+# mcp3.load_data(f.read())
+# # mcp3.test_prop_getter()
+# mcp3.find_swaps()
 
-test_winograd(print_solution=True)
+do_winograd_subs()
+
+# test_winograd(print_solution=True)
