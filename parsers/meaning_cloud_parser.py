@@ -205,7 +205,7 @@ class MeaningCloudParser(JSONNlPParser):
 
         if the_prop_ls_dict is None or len(the_prop_ls_dict) < 1 or u'iof_isAnaphora' not in the_prop_ls_dict:
             print " ERROR NO u'iof_isAnaphora', u'isAnaphora'?? ---- looping : " + str(the_prop_ls_dict)
-            print ' from: ' + str(self.root_dict[u'token_list'])
+            # print ' from: ' + str(self.root_dict[u'token_list'])
             return
         found_one_success = 0
         sol_antecedent = None
@@ -218,23 +218,24 @@ class MeaningCloudParser(JSONNlPParser):
                 for id in poss_antecedent[u'syn_ls']:
                     proform_id_ls.append(str(id))
 
-                for proform_node in the_prop_ls_dict[u'isAnaphora']:
+                for poss_proform_node in the_prop_ls_dict[u'isAnaphora']:
                     criteria_cnt = 0
                     # does this node have the same id as in proform_id_ls?
-                    if str(proform_node[u'id']) in proform_id_ls:
+                    if str(poss_proform_node[u'id']) in proform_id_ls:
                         criteria_cnt += 1
-                        print " proform id is in antcendant id list!" + str(proform_node[u'id'])
+                        print " proform id is in antcendant id list!" + str(poss_proform_node[u'id'])
 
                     # also does antecedent_id exist in this syn_ls?
-                    if antecedent_id in proform_node[u'syn_ls']:
+                    if antecedent_id in poss_proform_node[u'syn_ls']:
                         criteria_cnt += 1
                         print " antecedant id is in antcendant syn_ls! " + str(antecedent_id)
 
-                    if str(proform_node[u'form']).replace('\.','').lower() == proform.lower().replace('."',''):
+                    if str(poss_proform_node[u'form']).replace('\.','').lower() == proform.lower().replace('."',''):
                         criteria_cnt += 1
                         print " And proform matches!! " + str(proform)
                     else:
-                        print " Maybe missing proform match " + str(proform_node[u'form'])
+                        print " Maybe missing proform match :" + str(poss_proform_node[u'form']) + "|=|" + proform + "|"
+                        print " >> **NOT** found solution " + str(poss_antecedent) + "|=|" + str(poss_proform_node)
 
                     print " criteria_cnt = " + str(criteria_cnt)
 
@@ -246,7 +247,7 @@ class MeaningCloudParser(JSONNlPParser):
                         found_one_success = True
                         #save it some how?
                         sol_antecedent = poss_antecedent
-                        sol_proform = proform_node
+                        sol_proform = poss_proform_node
                     # else:
                     #     print " UNKNOWN STATUS "
 
@@ -255,6 +256,7 @@ class MeaningCloudParser(JSONNlPParser):
             return True
         else:
             print "Didnt find match? "
+
             return False
 
 
