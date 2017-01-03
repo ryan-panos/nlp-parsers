@@ -22,6 +22,7 @@ class CortParser(XMLNlPParser):
         self.root_str = super(CortParser, self).save_data(xml_str, needs_wrapper)
         print " >1----> self.root_str: " + str(self.root_str)
 
+
     def build_matches(self):
         cnt = 1
         if hasattr(self, "root") and self.root is None and self.root_str is not None:
@@ -34,7 +35,8 @@ class CortParser(XMLNlPParser):
 
         all_entities = collections.OrderedDict()
 
-        # for mention in self.root.iter('mention'):
+        # assembles a dict based on entity id so that each entity AND PROFORM is in the same list
+        # all data from each mention tag should still be in there . . .
         for mention in self.root.findall('mention'):
             cnt += 1
             if cnt % 1 == 0:
@@ -61,6 +63,30 @@ class CortParser(XMLNlPParser):
         pass
 
 
+    #TODO: move much of this to the parent and just do "per node" logic here
+    def give_updated_xml(self):
+
+
+        # EXAMPLE
+        # >> > for rank in root.iter('rank'):
+        #     ...
+        #     new_rank = int(rank.text) + 1
+        # ...
+        # rank.text = str(new_rank)
+        # ...
+        # rank.set('updated', 'yes')
+        # ...
+        # >> > tree.write('output.xml')
+
+
+
+        #  using the xml out put, update nofdes and re-dump into txt
+        f = open('/Users/ryanpanos/Documents/code/nlp-parsers/data/cort_update_test1.xml', 'w')
+
+        pass
+
+
+
 
 
 xml1 = "<x> hamster </x>"
@@ -74,7 +100,7 @@ def test_cort1():
 
     print " GONNA READ "
 
-    f = open('/Users/ryanpanos/Documents/code/nlp-parsers/data/winograd_cort_plain.xml', 'r')  # MAKE THIS RELATIVE!
+    f = open('/Users/ryanpanos/Documents/code/nlp-parsers/data/winograd_cort_plain.xml', 'r')  # todo MAKE THIS RELATIVE!
     # print f.read()
     # cp.load_data(f.read(), needs_wrapper=True)
     cp.save_data(f.read(), needs_wrapper=True)

@@ -12,6 +12,9 @@ class MeaningCloudParser(JSONNlPParser):
         # print "#> Initing CortParser . .."
         self.root_str = None
         self.root_dict = None
+
+        self.converted_sentance = None
+        self.scorez = None
         super(MeaningCloudParser, self).__init__(self)
 
     def load_data(self, json_str):
@@ -138,7 +141,7 @@ class MeaningCloudParser(JSONNlPParser):
             # print ">> syntactic_tree_relation_list missing: " + str(token_obj) # NORMAL AT MANY NODES!
             return None
 
-    # def _get_iof_isAnaphora_ls(self, token_ls):
+    # todo - possiblyt make a wrapper "public" version that does not expect an empty the_prop_ls_dict
     def _get_all_props_ls(self, token_ls, prop_ls, the_prop_ls_dict):
 
         # if prop_ls is empty, return None
@@ -213,9 +216,11 @@ class MeaningCloudParser(JSONNlPParser):
 
 
     def find_swaps(self, original_input_str):
+
         prop_ls = [u'iof_isAnaphora', u'isAnaphora']
         the_prop_ls_dict = {}  # todo - rename?
         if u'token_list' in self.root_dict:
+
             the_prop_ls_dict = self._get_all_props_ls(self.root_dict[u'token_list'], prop_ls, the_prop_ls_dict)
 
             # the_prop_ls_dict['isAnaphora'] = the_prop_ls_dict['isAnaphora'].sort(key=lambda x: (  int(x[u'inip']),
@@ -225,6 +230,7 @@ class MeaningCloudParser(JSONNlPParser):
                 print " %% No isAnaphora for " + original_input_str
                 return
 
+            # sort by starting position so that we can accumulate the offset from left to right
             sorted_proforms = sorted(the_prop_ls_dict['isAnaphora'], key=lambda k: int(k[u'inip']))
 
             print " The Entities: " + str(the_prop_ls_dict[u'iof_isAnaphora'])
@@ -235,6 +241,7 @@ class MeaningCloudParser(JSONNlPParser):
             END_TAG = '</span>'
             converted_original_input_str = original_input_str
             offset = 0
+            missing_cnt = 0
             for proform_node in sorted_proforms:
                 ent_id_ls = proform_node[u'syn_ls']
 
@@ -255,6 +262,7 @@ class MeaningCloudParser(JSONNlPParser):
                 entity_insert_str = self._get_antecdenat_str(the_prop_ls_dict[u'iof_isAnaphora'], int(ent_id_str))
                 if entity_insert_str is None:
                     entity_insert_str = "[MISSING]"
+                    missing_cnt += 1
 
                 new_pronoun_insert_str = START_TAG_A + ent_id_str + START_TAG_B + proform_node[u'form'] + "\\" + entity_insert_str + END_TAG
                 print " new_pronoun_insert_str: " + new_pronoun_insert_str
@@ -264,12 +272,10 @@ class MeaningCloudParser(JSONNlPParser):
                 offset = offset + len(new_pronoun_insert_str) - len(proform_node[u'form'])
 
             print " NOW: " + converted_original_input_str
-
-
-
-
-
-
+            self.converted_sentance = converted_original_input_str
+            self.scorez = {
+                "missing_perc": float(missing_cnt/float(len(sorted_proforms)))
+            }
 
         else:
             print " No token_list in root?"
@@ -389,6 +395,9 @@ def test_winograd(print_solution=False):
 
 def do_winograd_subs(print_solution=False):
 
+    SOL_HEAD_HTML = '<div class="mc_sol"><p>'
+    SOL_TAIL_HTML = '</div>'
+    sol_html = ""
     source = DATA_DIR + 'winograd.csv'
     # source = '/Users/ryanpanos/Documents/code/nlp-parsers/data/winograd.csv'
             # /Users/ryanpanos/Documents/code/nlp-parsers/data
@@ -398,6 +407,8 @@ def do_winograd_subs(print_solution=False):
         total_success = 0
         tried_cnt = 0
         for idx, line in enumerate(ins):
+
+            # this just breaks up input file ...
             line_ls = line.split('","')
             proform = line_ls[1]
             antecedent = line_ls[2].replace('\"','').replace('\n','')
@@ -405,14 +416,19 @@ def do_winograd_subs(print_solution=False):
             # print " proform:" + str(proform) + "|"
             # print " anaform:" + str(Antecedent) + "|"
 
+            #  each input line should already have an output file of "all" the info but in the
+            #  winograd corpus, there is only one EXPEPECTED pairing of antecendant and proform
             if antecedent != 'Antecedent': # skip line # 1
                 ans_file = 'meaningCloud_output_json/' + str(idx+1) + '_winograd.json'
                 f = open(DATA_DIR + ans_file, 'r')
                 mcp = MeaningCloudParser() ## just once?
                 mcp.load_data(f.read())
 
+                # expect a score on return?  Or maybe the converted? BOTH? They could also be stored in the object
                 mcp.find_swaps(sentance)
 
+                if mcp.converted_sentance is not None:
+                    sol_html += SOL_HEAD_HTML + mcp.converted_sentance + SOL_TAIL_HTML
                 # tried_cnt += 1
                 # # mcp.test_prop_getter()
                 # if print_solution:
@@ -423,7 +439,8 @@ def do_winograd_subs(print_solution=False):
                 #     total_success += 1
 
         print "\n\n >> Found " + str(total_success) + " out of " + str(tried_cnt)
-    print " DONE " + source
+    print " DONE " + source + "\n\n"
+    print sol_html
 
 
 # with open('data.json') as data_file:
