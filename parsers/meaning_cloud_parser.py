@@ -13,7 +13,8 @@ class MeaningCloudParser(JSONNlPParser):
         self.root_str = None
         self.root_dict = None
 
-        self.converted_sentance = None
+        self.converted_sentance_w_proform = None
+        self.converted_sentance_only_ent = None
         self.scorez = None
         super(MeaningCloudParser, self).__init__(self)
 
@@ -239,8 +240,10 @@ class MeaningCloudParser(JSONNlPParser):
             START_TAG_A = '<span eid='
             START_TAG_B = ' class="pronoun_insert">'
             END_TAG = '</span>'
-            converted_original_input_str = original_input_str
-            offset = 0
+            converted_w_prfm_html_str = original_input_str
+            converted_w_ent_only_str = original_input_str
+            offset_w_prfm = 0
+            offset_ent_only = 0
             missing_cnt = 0
             for proform_node in sorted_proforms:
                 ent_id_ls = proform_node[u'syn_ls']
@@ -256,26 +259,37 @@ class MeaningCloudParser(JSONNlPParser):
 
 
 
-                curr_pos = int(proform_node[u'inip']) + offset
-                end_pos = int(proform_node[u'inip']) + offset + len(proform_node[u'form'])
+                curr_pos_w_prfm = int(proform_node[u'inip']) + offset_w_prfm
+                end_pos_w_prfm = int(proform_node[u'inip']) + offset_w_prfm + len(proform_node[u'form'])
+
+                curr_pos_ent_only = int(proform_node[u'inip']) + offset_ent_only
+                end_pos_ent_only = int(proform_node[u'inip']) + offset_ent_only + len(proform_node[u'form'])
+
 
                 entity_insert_str = self._get_antecdenat_str(the_prop_ls_dict[u'iof_isAnaphora'], int(ent_id_str))
                 if entity_insert_str is None:
                     entity_insert_str = "[MISSING]"
                     missing_cnt += 1
+                    print " ***** MISSING *****" # never happens in meaning cloud?
 
                 new_pronoun_insert_str = START_TAG_A + ent_id_str + START_TAG_B + proform_node[u'form'] + "\\" + entity_insert_str + END_TAG
                 print " new_pronoun_insert_str: " + new_pronoun_insert_str
 
-                converted_original_input_str = converted_original_input_str[:curr_pos] + new_pronoun_insert_str + converted_original_input_str[end_pos:]
+                new_ent_only_insert_str = entity_insert_str
 
-                offset = offset + len(new_pronoun_insert_str) - len(proform_node[u'form'])
+                converted_w_prfm_html_str = converted_w_prfm_html_str[:curr_pos_w_prfm] + new_pronoun_insert_str + converted_w_prfm_html_str[end_pos_w_prfm:]
+                converted_w_ent_only_str = converted_w_ent_only_str[:curr_pos_ent_only] + new_ent_only_insert_str + converted_w_ent_only_str[end_pos_ent_only:]
 
-            print " NOW: " + converted_original_input_str
-            self.converted_sentance = converted_original_input_str
+                offset_w_prfm = offset_w_prfm + len(new_pronoun_insert_str) - len(proform_node[u'form'])
+                offset_ent_only = offset_ent_only + len(new_ent_only_insert_str) - len(proform_node[u'form'])
+
+            print ">> NOW: " + converted_w_ent_only_str
+            self.converted_sentance_w_proform = converted_w_prfm_html_str
+            self.converted_sentance_only_ent = converted_w_ent_only_str
             self.scorez = {
                 "missing_perc": float(missing_cnt/float(len(sorted_proforms)))
             }
+            print "missing_cnt :" + str(missing_cnt)
 
         else:
             print " No token_list in root?"
@@ -393,11 +407,19 @@ def test_winograd(print_solution=False):
     print " DONE " + source
 
 
+def write_dir_subs(dir_str, print_solution=False):
+    import os
+    print(os.path.isdir(dir_str))
+
+
 def do_winograd_subs(print_solution=False):
 
     SOL_HEAD_HTML = '<div class="mc_sol"><p>'
     SOL_TAIL_HTML = '</div>'
+    SCR_HEAD_HTML = '<span class="mc_scr">'
+    SCR_TAIL_HTML = '</span>'
     sol_html = ""
+    simple_html = ""
     source = DATA_DIR + 'winograd.csv'
     # source = '/Users/ryanpanos/Documents/code/nlp-parsers/data/winograd.csv'
             # /Users/ryanpanos/Documents/code/nlp-parsers/data
@@ -426,9 +448,16 @@ def do_winograd_subs(print_solution=False):
 
                 # expect a score on return?  Or maybe the converted? BOTH? They could also be stored in the object
                 mcp.find_swaps(sentance)
+                score_txt = '? score'
+                if mcp.converted_sentance_w_proform is not None:
+                    if mcp.scorez is not None and "missing_perc" in mcp.scorez:
+                        score_txt = "score: " + str(mcp.scorez["missing_perc"])
+                    sol_html += SOL_HEAD_HTML + mcp.converted_sentance_w_proform + SCR_HEAD_HTML + score_txt + SCR_TAIL_HTML + \
+                                SOL_TAIL_HTML
 
-                if mcp.converted_sentance is not None:
-                    sol_html += SOL_HEAD_HTML + mcp.converted_sentance + SOL_TAIL_HTML
+                if mcp.converted_sentance_only_ent is not None:
+                    simple_html += mcp.converted_sentance_only_ent + "  "
+
                 # tried_cnt += 1
                 # # mcp.test_prop_getter()
                 # if print_solution:
@@ -441,6 +470,7 @@ def do_winograd_subs(print_solution=False):
         print "\n\n >> Found " + str(total_success) + " out of " + str(tried_cnt)
     print " DONE " + source + "\n\n"
     print sol_html
+    print "\n\n" + simple_html
 
 
 # with open('data.json') as data_file:
@@ -470,4 +500,6 @@ json1 = '{"a": { "b":1 }}'
 
 do_winograd_subs()
 
+# write_dir_subs("")
+# json = [{'entity': 'Carlsbad, California', 'ner_type':'LOCATION'},{'entity': 'Dealstruck Inc', 'ner_type':'ORGANIZATION:COMPANY'}]
 # test_winograd(print_solution=True)

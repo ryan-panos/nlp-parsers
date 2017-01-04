@@ -1,0 +1,95 @@
+{
+  "entities": [
+    {
+      "count": 5, 
+      "entityId": "Q1553", 
+      "mention": "Nebraska", 
+      "normalized": "Nebraska", 
+      "type": "LOCATION"
+    }, 
+    {
+      "count": 3, 
+      "entityId": "T8", 
+      "mention": "senators", 
+      "normalized": "senators", 
+      "type": "TITLE"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "Q955662", 
+      "mention": "Chadron", 
+      "normalized": "Chadron", 
+      "type": "LOCATION"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "T2", 
+      "mention": "$400 million", 
+      "normalized": "$400 million", 
+      "type": "IDENTIFIER:MONEY"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "T4", 
+      "mention": "Tax Foundation", 
+      "normalized": "Tax Foundation", 
+      "type": "ORGANIZATION"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "T7", 
+      "mention": "Legislature", 
+      "normalized": "Legislature", 
+      "type": "ORGANIZATION"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "T9", 
+      "mention": "Revenue Committee", 
+      "normalized": "Revenue Committee", 
+      "type": "ORGANIZATION"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "T11", 
+      "mention": "10-year", 
+      "normalized": "10-year", 
+      "type": "TEMPORAL:TIME"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "T12", 
+      "mention": "3-year", 
+      "normalized": "3-year", 
+      "type": "TEMPORAL:TIME"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "T15", 
+      "mention": "pete.ricketts@nebraska.gov", 
+      "normalized": "pete.ricketts@nebraska.gov", 
+      "type": "IDENTIFIER:EMAIL"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "T16", 
+      "mention": "402-471-2244", 
+      "normalized": "402-471-2244", 
+      "type": "IDENTIFIER:PHONE_NUMBER"
+    }
+  ], 
+  "responseHeaders": {
+    "Connection": "keep-alive", 
+    "Content-Encoding": "gzip", 
+    "Content-Type": "application/json", 
+    "Date": "Wed, 04 Jan 2017 11:19:56 GMT", 
+    "Server": "openresty", 
+    "Strict-Transport-Security": "max-age=63072000; includeSubdomains; preload", 
+    "Vary": "Accept-Encoding", 
+    "X-RosetteAPI-App-Id": "1409613691693", 
+    "X-RosetteAPI-Concurrency": "2", 
+    "X-RosetteAPI-ProcessedLanguage": "eng", 
+    "X-RosetteAPI-Request-Id": "2421158f-4acd-4d39-9c63-3075907e533d", 
+    "transfer-encoding": "chunked"
+  }
+}

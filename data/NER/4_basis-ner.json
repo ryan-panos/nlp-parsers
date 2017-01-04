@@ -1,0 +1,270 @@
+{
+  "entities": [
+    {
+      "count": 6, 
+      "entityId": "Q3024155", 
+      "mention": "NLRB's", 
+      "normalized": "National Labor Relations Board", 
+      "type": "ORGANIZATION"
+    }, 
+    {
+      "count": 3, 
+      "entityId": "Q8010053", 
+      "mention": "William Gould", 
+      "normalized": "William Gould", 
+      "type": "PERSON"
+    }, 
+    {
+      "count": 3, 
+      "entityId": "T26", 
+      "mention": "McDonald's", 
+      "normalized": "McDonald's", 
+      "type": "ORGANIZATION"
+    }, 
+    {
+      "count": 2, 
+      "entityId": "T1", 
+      "mention": "America", 
+      "normalized": "America", 
+      "type": "LOCATION"
+    }, 
+    {
+      "count": 2, 
+      "entityId": "T3", 
+      "mention": "Thursday", 
+      "normalized": "Thursday", 
+      "type": "TEMPORAL:DATE"
+    }, 
+    {
+      "count": 2, 
+      "entityId": "T10", 
+      "mention": "Browning-Ferris", 
+      "normalized": "Browning-Ferris", 
+      "type": "PERSON"
+    }, 
+    {
+      "count": 2, 
+      "entityId": "T14", 
+      "mention": "Rebecca Bernhard", 
+      "normalized": "Rebecca Bernhard", 
+      "type": "PERSON"
+    }, 
+    {
+      "count": 2, 
+      "entityId": "Q30", 
+      "mention": "American", 
+      "normalized": "American", 
+      "type": "LOCATION"
+    }, 
+    {
+      "count": 2, 
+      "entityId": "T37", 
+      "mention": "Daniel J.B. Mitchell", 
+      "normalized": "Daniel J.B. Mitchell", 
+      "type": "PERSON"
+    }, 
+    {
+      "count": 2, 
+      "entityId": "Q655029", 
+      "mention": "Teamsters", 
+      "normalized": "Teamsters", 
+      "type": "ORGANIZATION"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "Q163820", 
+      "mention": "Silicon Valley", 
+      "normalized": "Silicon Valley", 
+      "type": "LOCATION"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "T5", 
+      "mention": "Browning-Ferris Industries", 
+      "normalized": "Browning-Ferris Industries", 
+      "type": "ORGANIZATION"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "Q16555", 
+      "mention": "Houston", 
+      "normalized": "Houston", 
+      "type": "LOCATION"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "T7", 
+      "mention": "Leadpoint Business Services", 
+      "normalized": "Leadpoint Business Services", 
+      "type": "ORGANIZATION"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "Q927510", 
+      "mention": "Milpitas", 
+      "normalized": "Milpitas", 
+      "type": "LOCATION"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "T9", 
+      "mention": "Calif.", 
+      "normalized": "Calif.", 
+      "type": "LOCATION"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "Q7314415", 
+      "mention": "Republic Services Inc.", 
+      "normalized": "Republic Services Inc.", 
+      "type": "ORGANIZATION"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "T12", 
+      "mention": "Leadpoint", 
+      "normalized": "Leadpoint", 
+      "type": "ORGANIZATION"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "T15", 
+      "mention": "labor attorney", 
+      "normalized": "labor attorney", 
+      "type": "TITLE"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "Q3408751", 
+      "mention": "Dorsey & Whitney", 
+      "normalized": "Dorsey & Whitney", 
+      "type": "ORGANIZATION"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "T19", 
+      "mention": "emeritus professor", 
+      "normalized": "emeritus professor", 
+      "type": "TITLE"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "Q8012895", 
+      "mention": "Stanford University Law School", 
+      "normalized": "Stanford University Law School", 
+      "type": "ORGANIZATION"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "T21", 
+      "mention": "chairman", 
+      "normalized": "chairman", 
+      "type": "TITLE"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "Q483551", 
+      "mention": "Wal-Mart", 
+      "normalized": "Wal-Mart", 
+      "type": "ORGANIZATION"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "Q177054", 
+      "mention": "Burger King", 
+      "normalized": "Burger King", 
+      "type": "ORGANIZATION"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "T29", 
+      "mention": "Democrats", 
+      "normalized": "Democrats", 
+      "type": "ORGANIZATION"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "Q29468", 
+      "mention": "Republicans", 
+      "normalized": "Republicans", 
+      "type": "ORGANIZATION"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "Q6978097", 
+      "mention": "National Retail Federation", 
+      "normalized": "National Retail Federation", 
+      "type": "ORGANIZATION"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "T38", 
+      "mention": "director", 
+      "normalized": "director", 
+      "type": "TITLE"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "Q174710", 
+      "mention": "UCLA", 
+      "normalized": "UCLA", 
+      "type": "ORGANIZATION"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "T44", 
+      "mention": "General President", 
+      "normalized": "General President", 
+      "type": "TITLE"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "Q711662", 
+      "mention": "Jim Hoffa", 
+      "normalized": "Jim Hoffa", 
+      "type": "PERSON"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "T46", 
+      "mention": "attorney", 
+      "normalized": "attorney", 
+      "type": "TITLE"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "Q2830522", 
+      "mention": "Alan James", 
+      "normalized": "Alan James", 
+      "type": "PERSON"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "T50", 
+      "mention": "chairman emeritus", 
+      "normalized": "chairman emeritus", 
+      "type": "TITLE"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "T51", 
+      "mention": "Pace University's Center for Global Governance", 
+      "normalized": "Pace University's Center for Global Governance", 
+      "type": "ORGANIZATION"
+    }
+  ], 
+  "responseHeaders": {
+    "Connection": "keep-alive", 
+    "Content-Encoding": "gzip", 
+    "Content-Length": "865", 
+    "Content-Type": "application/json", 
+    "Date": "Wed, 04 Jan 2017 11:19:41 GMT", 
+    "Server": "openresty", 
+    "Strict-Transport-Security": "max-age=63072000; includeSubdomains; preload", 
+    "Vary": "Accept-Encoding", 
+    "X-RosetteAPI-App-Id": "1409613691693", 
+    "X-RosetteAPI-Concurrency": "2", 
+    "X-RosetteAPI-ProcessedLanguage": "eng", 
+    "X-RosetteAPI-Request-Id": "358a4ae6-7a6e-445c-a5ff-dd11d76e2ce8"
+  }
+}

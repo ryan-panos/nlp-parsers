@@ -1,0 +1,15 @@
+{
+  "entities": [], 
+  "responseHeaders": {
+    "Connection": "keep-alive", 
+    "Content-Length": "15", 
+    "Content-Type": "application/json", 
+    "Date": "Wed, 04 Jan 2017 11:20:09 GMT", 
+    "Server": "openresty", 
+    "Strict-Transport-Security": "max-age=63072000; includeSubdomains; preload", 
+    "X-RosetteAPI-App-Id": "1409613691693", 
+    "X-RosetteAPI-Concurrency": "2", 
+    "X-RosetteAPI-ProcessedLanguage": "eng", 
+    "X-RosetteAPI-Request-Id": "a5c95962-d500-4582-8993-43a4c87f1094"
+  }
+}

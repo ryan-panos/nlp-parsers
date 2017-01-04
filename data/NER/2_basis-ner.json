@@ -1,0 +1,30 @@
+{
+  "entities": [
+    {
+      "count": 3, 
+      "entityId": "T0", 
+      "mention": "SMB", 
+      "normalized": "SMB", 
+      "type": "ORGANIZATION"
+    }, 
+    {
+      "count": 2, 
+      "entityId": "Q30", 
+      "mention": "US", 
+      "normalized": "US", 
+      "type": "LOCATION"
+    }
+  ], 
+  "responseHeaders": {
+    "Connection": "keep-alive", 
+    "Content-Length": "179", 
+    "Content-Type": "application/json", 
+    "Date": "Wed, 04 Jan 2017 11:18:39 GMT", 
+    "Server": "openresty", 
+    "Strict-Transport-Security": "max-age=63072000; includeSubdomains; preload", 
+    "X-RosetteAPI-App-Id": "1409613691693", 
+    "X-RosetteAPI-Concurrency": "2", 
+    "X-RosetteAPI-ProcessedLanguage": "eng", 
+    "X-RosetteAPI-Request-Id": "47377c80-7ce6-4b43-af8b-268419efdfa6"
+  }
+}

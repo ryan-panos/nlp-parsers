@@ -25,6 +25,11 @@ class JSONNlPParser(BaseParser):
                 if item is not None:
                     return item
 
+    def _find_in_list(self, list_of_dicts, key, value):
+        # what if missing?
+        return (item for item in list_of_dicts if item[key] == value).next()
+
+
     def _get_recursively(self, search_dict, field):
         """
         Takes a dict with nested lists and dicts,

@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "count": 3, 
+      "entityId": "T2", 
+      "mention": "Davenport", 
+      "normalized": "Lou Davenport", 
+      "type": "PERSON"
+    }, 
+    {
+      "count": 2, 
+      "entityId": "T7", 
+      "mention": "$30,000", 
+      "normalized": "$30,000", 
+      "type": "IDENTIFIER:MONEY"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "Q33264", 
+      "mention": "LAS CRUCES", 
+      "normalized": "LAS CRUCES", 
+      "type": "LOCATION"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "T1", 
+      "mention": "executive", 
+      "normalized": "executive", 
+      "type": "TITLE"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "T3", 
+      "mention": "first three years", 
+      "normalized": "first three years", 
+      "type": "TEMPORAL:TIME"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "T5", 
+      "mention": "first-year", 
+      "normalized": "first-year", 
+      "type": "TEMPORAL:TIME"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "T8", 
+      "mention": "a year", 
+      "normalized": "a year", 
+      "type": "TEMPORAL:TIME"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "T10", 
+      "mention": "SBA", 
+      "normalized": "SBA", 
+      "type": "ORGANIZATION"
+    }
+  ], 
+  "responseHeaders": {
+    "Connection": "keep-alive", 
+    "Content-Length": "787", 
+    "Content-Type": "application/json", 
+    "Date": "Wed, 04 Jan 2017 11:19:42 GMT", 
+    "Server": "openresty", 
+    "Strict-Transport-Security": "max-age=63072000; includeSubdomains; preload", 
+    "X-RosetteAPI-App-Id": "1409613691693", 
+    "X-RosetteAPI-Concurrency": "2", 
+    "X-RosetteAPI-ProcessedLanguage": "eng", 
+    "X-RosetteAPI-Request-Id": "2bb38194-2588-4782-842c-c63f2388eb38"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "entities": [
+    {
+      "count": 1, 
+      "entityId": "T0", 
+      "mention": "a year", 
+      "normalized": "a year", 
+      "type": "TEMPORAL:TIME"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "Q973587", 
+      "mention": "IRS", 
+      "normalized": "IRS", 
+      "type": "ORGANIZATION"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "Q154008", 
+      "mention": "vogue", 
+      "normalized": "vogue", 
+      "type": "ORGANIZATION"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "T3", 
+      "mention": "freelance writer", 
+      "normalized": "freelance writer", 
+      "type": "TITLE"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "Q250685", 
+      "mention": "Elance", 
+      "normalized": "Elance", 
+      "type": "ORGANIZATION"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "Q30", 
+      "mention": "us", 
+      "normalized": "us", 
+      "type": "LOCATION"
+    }
+  ], 
+  "responseHeaders": {
+    "Connection": "keep-alive", 
+    "Content-Length": "570", 
+    "Content-Type": "application/json", 
+    "Date": "Wed, 04 Jan 2017 11:20:14 GMT", 
+    "Server": "openresty", 
+    "Strict-Transport-Security": "max-age=63072000; includeSubdomains; preload", 
+    "X-RosetteAPI-App-Id": "1409613691693", 
+    "X-RosetteAPI-Concurrency": "2", 
+    "X-RosetteAPI-ProcessedLanguage": "eng", 
+    "X-RosetteAPI-Request-Id": "04c37d04-ef76-4187-bfb5-8ed4bfeff127"
+  }
+}

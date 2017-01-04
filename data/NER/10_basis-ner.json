@@ -1,0 +1,23 @@
+{
+  "entities": [
+    {
+      "count": 1, 
+      "entityId": "T0", 
+      "mention": "prince", 
+      "normalized": "prince", 
+      "type": "TITLE"
+    }
+  ], 
+  "responseHeaders": {
+    "Connection": "keep-alive", 
+    "Content-Length": "98", 
+    "Content-Type": "application/json", 
+    "Date": "Wed, 04 Jan 2017 11:20:16 GMT", 
+    "Server": "openresty", 
+    "Strict-Transport-Security": "max-age=63072000; includeSubdomains; preload", 
+    "X-RosetteAPI-App-Id": "1409613691693", 
+    "X-RosetteAPI-Concurrency": "2", 
+    "X-RosetteAPI-ProcessedLanguage": "eng", 
+    "X-RosetteAPI-Request-Id": "cb425ca9-bc38-4400-beb9-a0698217af02"
+  }
+}

@@ -1,0 +1,200 @@
+{
+  "entities": [
+    {
+      "count": 5, 
+      "entityId": "T19", 
+      "mention": "Riedl", 
+      "normalized": "Robert Riedl", 
+      "type": "PERSON"
+    }, 
+    {
+      "count": 4, 
+      "entityId": "T3", 
+      "mention": "CIM", 
+      "normalized": "Community Investment Management LLC", 
+      "type": "ORGANIZATION"
+    }, 
+    {
+      "count": 4, 
+      "entityId": "T38", 
+      "mention": "CIM", 
+      "normalized": "CIM Community Investment Management", 
+      "type": "ORGANIZATION"
+    }, 
+    {
+      "count": 3, 
+      "entityId": "T24", 
+      "mention": "Consumer Portfolio Services, Inc.", 
+      "normalized": "Consumer Portfolio Services, Inc.", 
+      "type": "ORGANIZATION"
+    }, 
+    {
+      "count": 3, 
+      "entityId": "T34", 
+      "mention": "SMBs", 
+      "normalized": "SMBs", 
+      "type": "ORGANIZATION"
+    }, 
+    {
+      "count": 2, 
+      "entityId": "Q491099", 
+      "mention": "Carlsbad, CA", 
+      "normalized": "Carlsbad, California", 
+      "type": "LOCATION"
+    }, 
+    {
+      "count": 2, 
+      "entityId": "T2", 
+      "mention": "$10 million", 
+      "normalized": "$10 million", 
+      "type": "IDENTIFIER:MONEY"
+    }, 
+    {
+      "count": 2, 
+      "entityId": "T4", 
+      "mention": "Robert Reidl", 
+      "normalized": "Robert Reidl", 
+      "type": "PERSON"
+    }, 
+    {
+      "count": 2, 
+      "entityId": "Q30", 
+      "mention": "United States", 
+      "normalized": "United States", 
+      "type": "LOCATION"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "T1", 
+      "mention": "Dealstruck Inc", 
+      "normalized": "Dealstruck Inc", 
+      "type": "ORGANIZATION"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "T6", 
+      "mention": "chief operating officer", 
+      "normalized": "chief operating officer", 
+      "type": "TITLE"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "T7", 
+      "mention": "Consumer Portfolio Services Inc.", 
+      "normalized": "Consumer Portfolio Services Inc.", 
+      "type": "ORGANIZATION"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "T9", 
+      "mention": "July 23, 2015", 
+      "normalized": "July 23, 2015", 
+      "type": "TEMPORAL:DATE"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "T13", 
+      "mention": "$100 million", 
+      "normalized": "$100 million", 
+      "type": "IDENTIFIER:MONEY"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "T14", 
+      "mention": "Ethan Senturia", 
+      "normalized": "Ethan Senturia", 
+      "type": "PERSON"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "T15", 
+      "mention": "CEO", 
+      "normalized": "CEO", 
+      "type": "TITLE"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "T16", 
+      "mention": "Jacob Haar", 
+      "normalized": "Jacob Haar", 
+      "type": "PERSON"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "T18", 
+      "mention": "Dealstruck", 
+      "normalized": "Dealstruck", 
+      "type": "ORGANIZATION"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "T20", 
+      "mention": "Head of Capital Markets", 
+      "normalized": "Head of Capital Markets", 
+      "type": "ORGANIZATION"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "T28", 
+      "mention": "Chief Investment Officer and Chief Financial Officer", 
+      "normalized": "Chief Investment Officer and Chief Financial Officer", 
+      "type": "TITLE"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "T30", 
+      "mention": "ContiFinancial Services", 
+      "normalized": "ContiFinancial Services", 
+      "type": "ORGANIZATION"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "Q325789", 
+      "mention": "Jefferies & Company", 
+      "normalized": "Jefferies & Company", 
+      "type": "ORGANIZATION"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "T32", 
+      "mention": "PaineWebber", 
+      "normalized": "PaineWebber", 
+      "type": "ORGANIZATION"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "T33", 
+      "mention": "Northwest Capital Appreciation", 
+      "normalized": "Northwest Capital Appreciation", 
+      "type": "ORGANIZATION"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "T37", 
+      "mention": "https://www.dealstruck.com/", 
+      "normalized": "https://www.dealstruck.com/", 
+      "type": "IDENTIFIER:URL"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "T43", 
+      "mention": "http://www.cim-llc.com", 
+      "normalized": "http://www.cim-llc.com", 
+      "type": "IDENTIFIER:URL"
+    }
+  ], 
+  "responseHeaders": {
+    "Connection": "keep-alive", 
+    "Content-Encoding": "gzip", 
+    "Content-Length": "694", 
+    "Content-Type": "application/json", 
+    "Date": "Wed, 04 Jan 2017 11:18:26 GMT", 
+    "Server": "openresty", 
+    "Strict-Transport-Security": "max-age=63072000; includeSubdomains; preload", 
+    "Vary": "Accept-Encoding", 
+    "X-RosetteAPI-App-Id": "1409613691693", 
+    "X-RosetteAPI-Concurrency": "2", 
+    "X-RosetteAPI-ProcessedLanguage": "eng", 
+    "X-RosetteAPI-Request-Id": "ca2e61e9-1575-4fbb-85a8-ddc38f4b786f"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "entities": [
+    {
+      "count": 4, 
+      "entityId": "T2", 
+      "mention": "Jeff", 
+      "normalized": "Jeff", 
+      "type": "PERSON"
+    }, 
+    {
+      "count": 4, 
+      "entityId": "Q3455054", 
+      "mention": "RRSP", 
+      "normalized": "RRSP", 
+      "type": "ORGANIZATION"
+    }, 
+    {
+      "count": 2, 
+      "entityId": "Q16", 
+      "mention": "Canada", 
+      "normalized": "Canadian", 
+      "type": "LOCATION"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "T0", 
+      "mention": "doctor", 
+      "normalized": "doctor", 
+      "type": "TITLE"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "T1", 
+      "mention": "A day", 
+      "normalized": "A day", 
+      "type": "TEMPORAL:TIME"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "T3", 
+      "mention": "CRA", 
+      "normalized": "CRA", 
+      "type": "ORGANIZATION"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "T5", 
+      "mention": "CPP", 
+      "normalized": "CPP", 
+      "type": "ORGANIZATION"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "T12", 
+      "mention": "thirty years", 
+      "normalized": "thirty years", 
+      "type": "TEMPORAL:TIME"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "T13", 
+      "mention": "bionic", 
+      "normalized": "bionic", 
+      "type": "PRODUCT"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "Q27564", 
+      "mention": "dodge", 
+      "normalized": "dodge", 
+      "type": "ORGANIZATION"
+    }
+  ], 
+  "responseHeaders": {
+    "Connection": "keep-alive", 
+    "Content-Length": "907", 
+    "Content-Type": "application/json", 
+    "Date": "Wed, 04 Jan 2017 11:18:48 GMT", 
+    "Server": "openresty", 
+    "Strict-Transport-Security": "max-age=63072000; includeSubdomains; preload", 
+    "X-RosetteAPI-App-Id": "1409613691693", 
+    "X-RosetteAPI-Concurrency": "2", 
+    "X-RosetteAPI-ProcessedLanguage": "eng", 
+    "X-RosetteAPI-Request-Id": "98538731-aea3-4603-95e3-1322b2a303fa"
+  }
+}

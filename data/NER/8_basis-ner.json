@@ -1,0 +1,58 @@
+{
+  "entities": [
+    {
+      "count": 3, 
+      "entityId": "Q62", 
+      "mention": "San Francisco, CA", 
+      "normalized": "San Francisco, CA", 
+      "type": "LOCATION"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "T0", 
+      "mention": "tax attorney", 
+      "normalized": "tax attorney", 
+      "type": "TITLE"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "Q973587", 
+      "mention": "IRS", 
+      "normalized": "IRS", 
+      "type": "ORGANIZATION"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "Q1044785", 
+      "mention": "Better Business Bureau", 
+      "normalized": "Better Business Bureau", 
+      "type": "ORGANIZATION"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "T5", 
+      "mention": "taxadvocatesf.com", 
+      "normalized": "taxadvocatesf.com", 
+      "type": "IDENTIFIER:URL"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "Q99", 
+      "mention": "CA", 
+      "normalized": "CA", 
+      "type": "LOCATION"
+    }
+  ], 
+  "responseHeaders": {
+    "Connection": "keep-alive", 
+    "Content-Length": "634", 
+    "Content-Type": "application/json", 
+    "Date": "Wed, 04 Jan 2017 11:20:12 GMT", 
+    "Server": "openresty", 
+    "Strict-Transport-Security": "max-age=63072000; includeSubdomains; preload", 
+    "X-RosetteAPI-App-Id": "1409613691693", 
+    "X-RosetteAPI-Concurrency": "2", 
+    "X-RosetteAPI-ProcessedLanguage": "eng", 
+    "X-RosetteAPI-Request-Id": "2a04ae34-283e-4aeb-abe1-aef2069ded85"
+  }
+}
