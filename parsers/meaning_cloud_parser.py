@@ -443,6 +443,7 @@ def do_winograd_subs(print_solution=False):
             if antecedent != 'Antecedent': # skip line # 1
                 ans_file = 'meaningCloud_output_json/' + str(idx+1) + '_winograd.json'
                 f = open(DATA_DIR + ans_file, 'r')
+
                 mcp = MeaningCloudParser() ## just once?
                 mcp.load_data(f.read())
 

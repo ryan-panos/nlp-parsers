@@ -133,5 +133,7 @@ basis_p1.load_data(f.read())
 # TODO: does normalized mean . .  lower case when appropriate?
 
 ner_node1 = basis_p1.get_entity_node("LAS CRUCES")
-
 print " GOT ner_node1: " + str(ner_node1)
+
+ner_node2 = basis_p1.get_entity_node("CRAP")
+print " This should be None: " + str(ner_node2)
