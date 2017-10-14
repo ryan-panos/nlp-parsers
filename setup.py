@@ -24,7 +24,7 @@ setup(
     name="nlp-parsers",
     version="0.1.0",
     author="ryan-panos",
-    author_email="jcadruvi78@yahoo.com",
+    author_email="randompkp@yahoo.com",
     description=("nlp-parsers"),
     license="Monitor 360 owns code",
     url="https://github.com/ryan-panos/nlp-parsers.git",
